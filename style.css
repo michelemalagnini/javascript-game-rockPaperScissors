@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+BODY{
+    background: #24272e;
+}
+
+HEADER {
+    background: white;
+    padding: 20px;
+
+}
+
+HEADER H1{
+    color: #24272e;
+    text-align: center;
+    font-family: Asap, sans-serif;
+}
+
+.score-board{
+    margin: 20px auto;
+    padding: 15px 20px;;
+    border: 3px #fff solid;
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: #fff;
+    font-size: 46px;
+    font-family: Asap, sans-serif;
+    position: relative;
+}
+
+.badge{
+    background: #E2584D;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: Asap, sans-serif;
+}
+
+#user-label{
+    position: absolute;
+    top:30px;
+    left:-25px;
+}
+
+#computer-label{
+    position: absolute;
+    top:30px;
+    right:-30px;
+}
+
+.result{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.result > P{
+    text-align: center;
+    font-weight: bold;
+    font-family: Asap, sans-serif;
+}
+
+.choices{
+    text-align: center;
+    margin: 50px;
+
+}
+.choice{
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 15px;
+    transition: all 0.3s ease;   
+    border:2px solid transparent; 
+}
+
+.choice:hover{
+    background: #E2584D;
+    cursor: pointer;
+}
+
+#action-message{
+    text-align: center;
+    color: #fff;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    font-size: 20px;;
+}
+
+
+.vinto{
+    border: 2px solid transparent;
+    animation-name: vinto;
+    animation-duration: 1s;
+
+    -webkit-animation-name: vinto;
+    -webkit-animation-duration: 1s;
+}
+
+@keyframes vinto{
+    from{border:2px solid transparent;}
+    to{border:2px solid green;}
+}
+
+.perso{
+    border: 2px solid transparent;
+    animation-name: perso;
+    animation-duration: 1s;
+
+    -webkit-animation-name: perso;
+    -webkit-animation-duration: 1s;
+}
+
+@keyframes perso{
+    from{border:2px solid transparent;}
+    to{border:2px solid red;}
+}
+
+.pareggiato{
+    border: 2px solid transparent;
+    animation-name: pareggiato;
+    animation-duration: 1s;
+
+    -webkit-animation-name: pareggiato;
+    -webkit-animation-duration: 1s;
+}
+
+@keyframes pareggiato{
+    from{border:2px solid transparent;}
+    to{border:2px solid yellow;}
+}
