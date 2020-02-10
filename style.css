@@ -136,3 +136,11 @@ HEADER H1{
     from{border:2px solid transparent;}
     to{border:2px solid yellow;}
 }
+
+@media screen and (max-width: 600px) {
+    .result {
+    color: 
+    #ffffff;
+    font-size: 22px;
+    }
+}
